@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(10deg, #000000, #2b1154);
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.logo{
+    width: 150px;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+.col-1{
+    flex-basis: 40%;
+    min-width: 200px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.col-2{
+    flex-basis: 55%;
+    min-width: 100px;
+    margin-bottom: 30px;
+}
+.col-1 img{
+    width: 100%;
+}
+.col-2 h1{
+    font-size: 62px;
+    font-weight: 600;
+}
+span{
+    color: yellow;
+}
+.elements{
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: move 2.5s linear infinite;
+}
+@keyframes move{
+    0%{
+        transform: translate(15px,0px);
+    }
+    50%{
+        transform: translate(0px,-15px);
+    }
+    100%{
+        transform: translate(-15px,0px);
+    }
+}
+.triangle1{
+    position: absolute;
+    left: 50%;
+    top: -180px;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: -1;
+    opacity: 0.7;
+}
+.triangle2{
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: -1;
+    opacity: 0.7;
+}
+.circle{
+    position: absolute;
+    left: -100px;
+    bottom: -300px;
+    width: 100px;
+    z-index: -1;
+    opacity: 0.5;
+}
